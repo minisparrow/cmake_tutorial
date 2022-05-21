@@ -1,0 +1,8 @@
+#define OLOS_VERSION_MAJOR @OLOS_VERSION_MAJOR@
+#define OLOS_VERSION_MINOR @OLOS_VERSION_MINOR@
+
+//#define USE_ADDER
+
+#ifdef USE_ADDER_ON
+   #include "Adder.h"
+#endif
