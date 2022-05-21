@@ -59,3 +59,14 @@ option中的变量并不能在c++代码中使用，应使用add_definition的定
 if(USE_ADDER) {
     add_definition(-DUSE_ADDER_ON)
 }
+
+## 7. install 
+
+```
+        install(TARGETS .. DESTIINATION ..),
+        install(FILES .. DESTINATION ..)
+```
+
+默认安装的路径CMAKE_INSTALL_PREFIX 为/usr/local, 可以通过cmake -DCMAKE_INSTALL_PREFIX=/install-path, 修改安装的路径
+ 
+通过命令 make install 来安装．

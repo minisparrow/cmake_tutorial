@@ -27,8 +27,9 @@ target_link_libraries(${PROJECT_NAME}
                       ${EXTRA_LINK_LIBS}
 )
 
-install(TARGETS ${PROJECT_NAME} DESTINATION bin)
-install(FILES "${PROJECT_BINARY_DIR}/config.h" DESTINATION include)
 message("PROJET_BINRAY_DIR: "  ${PROJECT_BINARY_DIR})
 message("CMAKE_INSTALL_PREFIX: " ${CMAKE_INSTALL_PREFIX})
+
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/config.h" DESTINATION include)
 
